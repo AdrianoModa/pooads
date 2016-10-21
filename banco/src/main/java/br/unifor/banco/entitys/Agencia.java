@@ -27,7 +27,13 @@ public class Agencia {
 		this(nome, numero);
 		this.contas = contas;
 	}
+	
+	public void addConta(Conta conta){
+		contas.add(conta);
+	}
+	
 
+	/**		métodos acessores	*/
 	public String getNome() {
 		return nome;
 	}
@@ -47,10 +53,6 @@ public class Agencia {
 	public List<Conta> getContas(){
 		return this.contas;
 	}
-	
-	public void addConta(Conta conta){
-		this.contas.add(conta);
- 	}
 	
 	public void removeConta(Conta conta){
 		this.contas.remove(conta);

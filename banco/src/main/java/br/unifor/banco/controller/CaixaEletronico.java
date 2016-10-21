@@ -20,7 +20,12 @@ public class CaixaEletronico {
 		Conta conta2 = new Conta("456", 7500.00, agenciaBradesco, cliente2, TipoConta.POUPANCA);
 		Conta conta3 = new Conta("789", 0.00, agenciaBradesco, cliente3, TipoConta.ESPECIAL);
 		
-		agenciaBradesco.getContas().forEach(conta -> System.out.println(conta.getCliente().getNome()));
+		Cliente.setMaxQtdaBracos(3);
+		System.out.println(cliente1.getMaxQtdaBracos());
+		System.out.println(cliente2.getMaxQtdaBracos());
+		
+
+		
 
 	}
 

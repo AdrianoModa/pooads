@@ -7,6 +7,8 @@ public class Cliente {
 	private String cpf;
 	private Boolean ativo;
 	private Integer idade;
+	
+	private static Integer maxQtdaBracos = 2;
 
 	public Cliente(String nome, String cpf, Boolean ativo, Integer idade) {
 		super();
@@ -17,8 +19,21 @@ public class Cliente {
 	}
 
 	// métodos acessores getts and setts
+	
 	public String getNome() {
 		return this.nome;
+	}
+
+	public static Integer getMaxQtdaBracos() {
+		return maxQtdaBracos;
+	}
+
+	public static void setMaxQtdaBracos(Integer maxQtdaBracos) {
+		Cliente.maxQtdaBracos = maxQtdaBracos;
+	}
+
+	public Boolean getAtivo() {
+		return ativo;
 	}
 
 	public void setNome(String nome) {
